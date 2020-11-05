@@ -15,7 +15,8 @@
     "@material-ui/icons": "^4.9.1",
     "next": "^10.0.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-step-wizard": "^5.3.5"
   },
   "devDependencies": {
     "@types/node": "^14.14.6",
