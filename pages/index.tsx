@@ -4,8 +4,9 @@ import Paper from "@material-ui/core/Paper";
 import Box from "@material-ui/core/Box";
 import FormControl from "@material-ui/core/FormControl";
 import Typography from "@material-ui/core/Typography";
-import TextField from "@material-ui/core/TextField";
 import useStyles from "../src/styles";
+
+import Stepper from "../src/components/Stepper";
 
 export default function Index() {
 	const classes = useStyles();
@@ -30,8 +31,7 @@ export default function Index() {
 								Generate yourself a custom ticket for your event! Fast and easy. You can do it!
 							</Typography>
 
-							<TextField id="outlined-basic" label="Typing your name..." variant="outlined"/>
-
+							<Stepper/>
 						</FormControl>
 					</Box>
 				</Box>

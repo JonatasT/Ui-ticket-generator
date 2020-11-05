@@ -26,6 +26,9 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: 0,
       padding: 0,
     },
+    stepperWrapper: {
+      width: "100%",
+    },
     box: {
       height: "100vh",
       padding: theme.spacing(2),

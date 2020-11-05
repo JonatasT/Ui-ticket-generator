@@ -1,12 +1,15 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 import { red, blueGrey } from "@material-ui/core/colors";
 
+const colorThemeOne = "#FB6A89";
+const colorThemeTwo = "#00d4ff";
+
 // Create a theme instance.
 const theme = createMuiTheme({
   palette: {
     type: "dark",
     primary: {
-      main: "#00d4ff",
+      main: colorThemeOne,
     },
     secondary: {
       main: "#000",
@@ -62,7 +65,7 @@ const theme = createMuiTheme({
         border: "2px solid #fff",
         padding: "12px 10px",
         "&:hover": {
-          borderColor: "#00d4ff !important",
+          borderColor: colorThemeOne+"!important",
         },
       },
     },
@@ -73,7 +76,7 @@ const theme = createMuiTheme({
         fontSize: 16,
         marginLeft: 5,
         "&:hover": {
-          color: "#00d4ff",
+          color: colorThemeOne,
         },
       },
     },
@@ -82,19 +85,20 @@ const theme = createMuiTheme({
       root: {
         fontFamily: "Open Sans",
         fontSize: 15,
+        fontWeight: 800,
         textTransform: "none",
-        background: "linear-gradient(45deg, #2196F3 30%, #00d4ff 90%)",
-        borderRadius: 2,
-        color: "black",
-        fontWeight: 600,
-        height: 66,
-        padding: "0 30px",
-        margin: "7px auto",
+        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+        borderRadius: 3,
+        border: 0,
+        color: 'white',
+        height: 56,
+        padding: '0 30px',
+        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       },
       outlined: {
         background: "transparent",
         borderWidth: "1.5px !important",
-        borderColor: "#00d4ff !important",
+        borderColor: colorThemeOne+"!important",
       },
     },
     MuiButtonGroup: {
