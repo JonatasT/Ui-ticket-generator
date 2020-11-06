@@ -6,7 +6,7 @@ import FormControl from "@material-ui/core/FormControl";
 import Typography from "@material-ui/core/Typography";
 import useStyles from "../src/styles";
 
-import Stepper from "../src/components/Stepper";
+import { Stepper } from "../src/components/Stepper";
 
 export default function Index() {
 	const classes = useStyles();
