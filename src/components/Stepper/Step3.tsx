@@ -1,8 +1,8 @@
-import TextField from "@material-ui/core/TextField";
+import CustomTextField from "../CustomTextField";
 
 export const Step3 = ({
     nextStep, 
-    update}: any) => {
+    }: any): JSX.Element => {
 
     const handleKeyPress = (e: any) => {
         if(e.key === 'Enter'){
@@ -11,12 +11,9 @@ export const Step3 = ({
     }
     
     return (
-        <TextField 
-            fullWidth 
-            id="outlined-basic" 
-            label="Step3..." 
-            variant="outlined" 
-            onChange={update} 
+        <CustomTextField
+            name="field3"
+            label="Step3..."
             onKeyPress={handleKeyPress}
         />
 
