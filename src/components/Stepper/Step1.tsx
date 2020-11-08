@@ -1,5 +1,7 @@
 import CustomTextField from "../CustomTextField";
 
+import handleKeyPress from "../CustomTextField/actions";
+
 export const Step1 = ({
     nextStep,
   }: any): JSX.Element => {
@@ -15,13 +17,9 @@ export const Step1 = ({
             <CustomTextField
                 name="nickname"
                 label="Type your name..."
+                nextStep={nextStep}
                 onKeyPress={handleKeyPress}
             />
-            {/*
-            <Box marginTop={2}>
-                <Button fullWidth onClick={(e) => nextStep(e)} type="submit">Let's go</Button>
-            </Box>
-            */}
         </>
     );
   };

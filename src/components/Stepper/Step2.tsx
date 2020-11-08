@@ -14,6 +14,7 @@ export const Step2 = ({
         <CustomTextField
             name="field2"
             label="Step2..."
+            nextStep={nextStep}
             onKeyPress={handleKeyPress}
         />
 
