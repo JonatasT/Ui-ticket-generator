@@ -1,11 +1,5 @@
-export const handleKeyPress = ({
-    nextStep,
-  }: any) => {
-    const handleKeyPress = (e: any) => {
-        if(e.key === 'Enter'){
-            nextStep(e);
-        }
-    }
+export default function handleKeyPress(e: any, nextStep: any) {
+  if(e.key === 'Enter'){
+    nextStep(e);
   }
-
-export default handleKeyPress;
+}
