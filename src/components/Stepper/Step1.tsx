@@ -1,6 +1,5 @@
 import CustomTextField from "../CustomTextField";
-
-import handleKeyPress from "../CustomTextField/actions";
+import DefaultCard from "../Cards/DefaultCard";
 
 export const Step1 = ({
     nextStep,
@@ -20,6 +19,8 @@ export const Step1 = ({
                 nextStep={nextStep}
                 onKeyPress={handleKeyPress}
             />
+
+            <DefaultCard/>
         </>
     );
   };
