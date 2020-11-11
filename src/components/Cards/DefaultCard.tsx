@@ -5,72 +5,81 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 import { makeStyles } from '@material-ui/core/styles';
+import { BorderRight } from "@material-ui/icons";
 
 const useStyles = makeStyles({
     root: {
       minWidth: 275,
     },
     ticketVisualVisual: {
-          width: "650px",
-          height: "320px",
-          margin: "100px auto",
-          position: "relative",
-          transition: "all 300ms cubic-bezier(0.03, 0.98, 0.53, 0.99) 0s",
-          border: "5px solid #fff",
-        },
-        ticketVisualWrapper: {
-          width: "100%",
-          height: "100%",
-        },
-        ticketVisualProfile: {
-          padding: "calc(39px * var(--size)) calc(155px * var(--size)) calc(\n      39px * var(--size)\n    ) calc(58px * var(--size))",
-        },
-        ticketProfileText: {
-          margin: "0",
-        },
-        ticketProfileProfile: {
-          display: "flex",
-          flexDirection: "row",
-        },
-        ticketEvent: {
-          marginTop: "25px",
-          marginLeft: "-10px",
-        },
-        ticketProfileImage: {
-          width: "calc(82px * var(--size))",
-          height: "calc(82px * var(--size))",
-          borderRadius: "50%",
-        },
-        ticketProfileName: {
-          fontSize: "calc(32px * var(--size))",
-          margin: "10px 0 5px 20px",
-          fontWeight: 700,
-        },
-        ticketProfileUsername: {
-          margin: "0 0 5px 20px",
-          color: "#8a8f98",
-          display: "flex",
-        },
-        ticketProfileGithubIcon: {
-          width: "18px",
-          height: "18px",
-          marginRight: "5px",
-        },
-        ticketVisualTicketNumberWrapper: {
-          position: "absolute",
-          right: "35px",
-          bottom: "0",
-        },
-        ticketVisualTicketNumber: {
-          transform: "rotate(90deg) translateY(calc(100px * var(--size)))",
-          transformOrigin: "bottom right",
-          fontSize: "calc(40px * var(--size))",
-          fontWeight: 700,
-          textAlign: "center",
-          paddingBottom: "35px",
-          width: "calc(320px - 10px)",
-          borderBottom: "2px dashed #333",
-        },
+      width: 650,
+      height: 320,
+      margin: "5px auto",
+      position: "relative",
+      display: "grid",
+      transition: "all 300ms cubic-bezier(0.03, 0.98, 0.53, 0.99) 0s",
+      borderRadius: 20,
+      background: "linear-gradient(to right, #d25778, #ec585c, #e7d155, #56a8c6)",      
+    },
+    ticketVisualWrapper: {
+      width: "98.5%",
+      height: "97%",
+      background: "black",
+      alignSelf:  "center",
+      justifySelf: "center",
+      borderRadius: 15,
+    },
+    ticketVisualProfile: {
+      padding: "39px 155px 39px 58px",
+    },
+    ticketProfileText: {
+      margin: "0",
+    },
+    ticketProfileProfile: {
+      display: "flex",
+      flexDirection: "row",
+    },
+    ticketEvent: {
+      marginTop: "25px",
+      marginLeft: "-10px",
+    },
+    ticketProfileImage: {
+      width: "82px",
+      height: "82px",
+      borderRadius: "50%",
+    },
+    ticketProfileName: {
+      fontSize: "32px",
+      margin: "10px 0 5px 20px",
+      fontWeight: 700,
+    },
+    ticketProfileUsername: {
+      margin: "0 0 5px 20px",
+      color: "#8a8f98",
+      display: "flex",
+    },
+    ticketProfileGithubIcon: {
+      width: "18px",
+      height: "18px",
+      marginRight: "5px",
+      marginTop: 2,
+    },
+    ticketVisualTicketNumberWrapper: {
+      position: "absolute",
+      right: 135,
+      bottom: "0",
+    },
+    ticketVisualTicketNumber: {
+      transform: "rotate(90deg)",
+      translateY: 100,
+      transformOrigin: "bottom right",
+      fontSize: "40px",
+      fontWeight: 700,
+      textAlign: "center",
+      paddingBottom: "35px",
+      width: "310px",
+      borderBottom: "2px dashed #333",
+    },
   });
 
 export const DefaultCard = (): JSX.Element => {
@@ -78,51 +87,29 @@ export const DefaultCard = (): JSX.Element => {
 
     return (
         <>
-        {/*<Card className={classes.root} variant="outlined">
-            <CardContent>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Word of the Day
-                </Typography>
-                <Typography variant="h5" component="h2">
-                    beent
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    adjective
-                </Typography>
-                <Typography variant="body2" component="p">
-                    well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">Learn More</Button>
-            </CardActions>
-        </Card>*/}
-        
-        <div className="ticketVisualVisual" id="ticket">
+        <div className={classes.ticketVisualVisual} id="ticket">
             <div className="left"></div>
             <div className="right"></div>
             <div className={classes.ticketVisualWrapper}>
                 <div className={classes.ticketVisualProfile}>
                 <div className={classes.ticketProfileProfile}>
                     <img
-                    src="https://github.com/medhatdawoud.png"
-                    alt="medhatdawoud"
+                    src="https://github.com/jonatast.png"
+                    alt="jonatast"
                     className={classes.ticketProfileImage}
                     />
                     <div className={classes.ticketProfileText}>
-                    <p className={classes.ticketProfileName}>Medhat Dawoud</p>
+                    <p className={classes.ticketProfileName}>Jonatas Teixeira</p>
                     <p className={classes.ticketProfileUsername}>
                         <span className={classes.ticketProfileGithubIcon}>
-                        <img className={classes.ticketProfileGithubIcon} src="./github.svg" alt="" />
+                        <img className={classes.ticketProfileGithubIcon} src="https://raw.githubusercontent.com/gerardbrian19/nextjs-conf-ticket/5c78bf6b55b66de605998b8e1c5640bf4773e00c/github.svg" alt="" />
                         </span>
-                        medhatdawoud
+                        jonatast
                     </p>
                     </div>
                 </div>
                 <div className={classes.ticketEvent}>
-                    <img src="./event-logos.png" />
+                    <img src="https://raw.githubusercontent.com/gerardbrian19/nextjs-conf-ticket/main/event-logos.png" />
                 </div>
                 </div>
                 <div className={classes.ticketVisualTicketNumberWrapper}>
@@ -136,3 +123,4 @@ export const DefaultCard = (): JSX.Element => {
 
 
 export default DefaultCard;
+
