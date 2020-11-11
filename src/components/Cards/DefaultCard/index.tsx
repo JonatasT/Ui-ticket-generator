@@ -4,7 +4,7 @@ import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import { useStyles } from "./DefaultCard/styles";
+import { useStyles } from "./styles";
 
 export const DefaultCard = (): JSX.Element => {
     const classes = useStyles();
