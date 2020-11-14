@@ -21,6 +21,19 @@ const useStyles = makeStyles((theme: Theme) =>
       marginLeft: -10,
       marginTop: -30,
     },
+    logoMenu: {
+      transform: "rotate(-45deg)",
+      marginTop: 50,
+      marginLeft: 20,
+      zIndex: 3,
+      position: "absolute",
+    },
+    logoText: {
+      fontWeight: 700,
+      marginTop: 58,
+      marginLeft: 125,
+      lineHeight: 0.8,
+    },
     wrapper: {
       overflow: "hidden",
       margin: 0,
