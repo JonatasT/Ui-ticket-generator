@@ -1,9 +1,3 @@
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import CardActions from "@material-ui/core/CardActions";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-
 import { useStyles } from "./styles";
 
 export const DefaultCard = (): JSX.Element => {
@@ -28,7 +22,7 @@ export const DefaultCard = (): JSX.Element => {
                           <span className={classes.ticketProfileGithubIcon}>
                             <img 
                               className={classes.ticketProfileGithubIcon} 
-                              src="https://raw.githubusercontent.com/gerardbrian19/nextjs-conf-ticket/5c78bf6b55b66de605998b8e1c5640bf4773e00c/github.svg" alt="" />
+                              src="/githubLogo.svg" alt="Github" />
                           </span>
                           jonatast
                         </p>
@@ -37,7 +31,7 @@ export const DefaultCard = (): JSX.Element => {
                   <div className={classes.ticketEvent}>
                     <img 
                       className={classes.ticketEvent}
-                      src="https://raw.githubusercontent.com/gerardbrian19/nextjs-conf-ticket/main/event-logos.png" />
+                      src="/eventLogos.png" />
                   </div>
                 </div>
                 <div className={classes.ticketVisualTicketNumberWrapper}>
