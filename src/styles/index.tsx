@@ -28,11 +28,8 @@ const useStyles = makeStyles((theme: Theme) =>
       zIndex: 3,
       position: "absolute",
     },
-    logoText: {
-      fontWeight: 700,
+    logoLandscape: {
       marginTop: 58,
-      marginLeft: 125,
-      lineHeight: 0.8,
     },
     wrapper: {
       overflow: "hidden",

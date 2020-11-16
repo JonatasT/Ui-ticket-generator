@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import Box from "@material-ui/core/Box";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
@@ -23,10 +25,11 @@ export function Card() {
     return (
         <Box>
             <Box>
-                <Typography variant="h6" className={classes.logoText}>
-                    UIT
-                    <br/>GEN
-                </Typography>
+                <Link href="/">
+                    <a>
+                        <Image className={classes.logoLandscape} src="/uitgenLandscapeLogoWhite.svg" width="415px" height="32px"/>
+                    </a>
+                </Link>
             </Box>
                                 
             <Box>
