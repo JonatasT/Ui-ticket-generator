@@ -13,15 +13,12 @@ export const Step1 = ({
   
     return (
         <>
-            
             <CustomTextField
                 name="nickname"
                 label="Type your name..."
                 nextStep={nextStep}
                 onKeyPress={handleKeyPress}
             />
-
-            <DefaultCard/>
         </>
     );
   };
