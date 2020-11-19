@@ -3,8 +3,8 @@ export const DefaultCard = (): JSX.Element => {
   const classes = useStyles();
   return (
     <div className={classes.ticketVisualVisual} id="ticket">
-      <div className={classes.left}></div>
-        <div className={classes.right}></div>
+      <div className={`${classes.left} ${classes.leftAndright}`}></div>
+        <div className={`${classes.right} ${classes.leftAndright}`}></div>
           <div className={classes.ticketVisualWrapper}>
             <div className={classes.ticketVisualProfile}>
               <div className={classes.ticketProfileProfile}>

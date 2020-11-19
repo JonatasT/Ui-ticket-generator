@@ -81,25 +81,22 @@ export const useStyles = makeStyles({
         zIndex: 3,
       },
     },
-
-    left: {
+    
+    leftAndright: {
       position: "absolute",
       top: 110,
-      left: -50,
       width: 50,
       height: 100,
       background: `${background}`,
       zIndex: 4,
     },
 
+    left: {
+      left: -50
+    },
+
     right: {
-      position: "absolute",
-      top: 110,
-      right: -50,
-      width: 50,
-      height: 100,
-      background: `${background}`,
-      zIndex: 4,
+      right: -50
     },
 
     ticketVisualProfile: {
