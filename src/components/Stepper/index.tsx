@@ -5,20 +5,29 @@ import useStyles from "../../styles/";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
+import Step4 from "./Step4";
+
 export const Stepper = (...props: any) => {
     const classes = useStyles();
     const [state, updateState] = useState({form: {usename: ""}});
+    
     const updateForm = (key: any, value: any) => {
         const { form }: any = state;
         form[key] = value;
         updateState({...state,form});
     };
+    
     const setInstance = (SW: any) => updateState({...state,...SW});
-    return (<Box className={classes.stepperWrapper}>
+    
+    return (
+        <Box className={classes.stepperWrapper}>
              <StepWizard isHashEnabled={false} isLazyMount={true} instance={setInstance}>
                 <Step1 form={state.form} update={updateForm}/>
                 <Step2 form={state.form} update={updateForm}/>
                 <Step3 form={state.form} update={updateForm}/>
+                <Step4 form={state.form} update={updateForm}/>
             </StepWizard>
         </Box>);
-}; export default Stepper;
+}; 
+
+export default Stepper;
