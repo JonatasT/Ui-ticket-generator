@@ -1,23 +1,44 @@
-import CustomTextField from "../CustomTextField";
+import { useState } from "react";
+import { FilePond, registerPlugin } from 'react-filepond';
+import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
+import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
+import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+import 'filepond/dist/filepond.min.css';
 
-export const Step3 = ({
-    nextStep, 
-    }: any): JSX.Element => {
+import { StepLabel } from '@material-ui/core';
+import { useStyles } from "./styles";
 
-    const handleKeyPress = (e: any) => {
-        if(e.key === 'Enter'){
-            nextStep(e);
-        }
+registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
+
+interface FileUploaderProps {
+    onUploadComplete: () => void;
+    fileTypes: string[];
+}
+
+export const Step3 = (props: FileUploaderProps): JSX.Element => {
+    const [files, setFiles] = useState<File[]>([]);
+    const classes = useStyles();
+   
+    const handleInit = () => {
+        console.log('FilePond instance has initialised');
     }
-    
-    return (
-        <CustomTextField
-            name="field3"
-            label="Step3..."
-            nextStep={nextStep}
-            onKeyPress={handleKeyPress}
-        />
 
+    return (
+        <>
+            <StepLabel className={classes.label}>Upload your image event logo:</StepLabel>
+            <FilePond
+                className={classes.imageInput}
+                files={files}
+                allowMultiple={false}
+                dropOnPage
+                server="/api"
+                name="files"
+                oninit={() => handleInit() }
+                dropValidation
+                acceptedFileTypes={props.fileTypes}
+                stylePanelLayout={"integrated"}
+        />
+       </>
     );
 }
 
