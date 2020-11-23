@@ -5,9 +5,14 @@ import FormControl from "@material-ui/core/FormControl";
 import Typography from "@material-ui/core/Typography";
 import useStyles from "../src/styles";
 import { Stepper } from "../src/components/Stepper";
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import Link from "next/link";
+
 export default function Index() {
 	const classes = useStyles();
-	return (<Grid container direction="column" justify="center" alignItems="center">
+
+	return (
+		<Grid container direction="column" justify="center" alignItems="center">
 			 <Box className={classes.box}>
 				<Box className={classes.innerBox}>
 					<FormControl>
@@ -18,6 +23,11 @@ export default function Index() {
 						</Typography>
 						<Stepper/>
 					</FormControl>
+				</Box>
+				<Box height="100%" alignContent="space-between">
+							Made with {<FavoriteBorderIcon/>} by {<Link href="https://github.com/JonatasT">
+					<a>JonatasT</a>
+				</Link>}
 				</Box>
 			</Box>
 		</Grid>
