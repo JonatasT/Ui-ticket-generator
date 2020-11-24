@@ -24,9 +24,9 @@ export default function Index() {
 						<Stepper/>
 					</FormControl>
 				</Box>
-				<Box height="100%" alignContent="space-between">
+				<Box className={classes.footer} marginTop={-10} width="100%" alignContent="space-between">
 							Made with {<FavoriteBorderIcon/>} by {<Link href="https://github.com/JonatasT">
-					<a>JonatasT</a>
+					<a className={classes.link} >JonatasT</a>
 				</Link>}
 				</Box>
 			</Box>
