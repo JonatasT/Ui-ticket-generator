@@ -13,7 +13,7 @@ export default function Index() {
 
 	return (
 		<Grid container direction="column" justify="center" alignItems="center">
-			 <Box className={classes.box}>
+			 <Box marginTop={15} className={classes.box}>
 				<Box className={classes.innerBox}>
 					<FormControl>
 						<Image src="/logoColor.svg" alt="UI ticket generator" className={classes.logo} height={72} width={160}/>
