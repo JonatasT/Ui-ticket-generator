@@ -1,6 +1,5 @@
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import { Rotate90DegreesCcw } from "@material-ui/icons";
-import { start } from "repl";
+import { relative } from "path";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -45,14 +44,36 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "grid",
     },
     innerBox: {
-        placeSelf: "center",
-        maxWidth: 550
+      placeSelf: "center",
+      maxWidth: 550
     },
     paper: {
-        padding: theme.spacing(1),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-      },
+      padding: theme.spacing(1),
+      textAlign: 'center',
+      color: theme.palette.text.secondary,
+    },
+    socialMedia: {
+      position: "fixed",
+      rotate: "270deg",
+      left: "5rem",
+      top: "-8rem",
+    },
+    footer: {
+      textDecoration: "none",
+      display: "flex",
+      justifyContent: "space-between",
+      width: 200,
+      position: "relative",
+    },
+    link: {
+      textDecoration: "none",
+      color: "#FB6A89",
+      transition: ".2s",
+      "&:hover": {
+        color: "#00d4ff",
+        transition: ".2s"
+      }
+    }
   })
 );
 
