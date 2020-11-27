@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       justifyContent: "space-between",
       width: 200,
-      position: "relative",
     },
     link: {
       textDecoration: "none",

@@ -23,11 +23,14 @@ export default function Index() {
 						</Typography>
 						<Stepper/>
 					</FormControl>
-				</Box>
-				<Box className={classes.footer} marginTop={-10} width="100%" alignContent="space-between">
-							Made with {<FavoriteBorderIcon/>} by {<Link href="https://github.com/JonatasT">
-					<a className={classes.link} >JonatasT</a>
-				</Link>}
+					<Box className={classes.footer} marginTop={10} width="100%" alignContent="space-between">
+						Made with {<FavoriteBorderIcon/>} by 
+						{
+							<Link href="https://github.com/JonatasT">
+								<a className={classes.link} >JonatasT</a>
+							</Link>
+						}
+					</Box>
 				</Box>
 			</Box>
 		</Grid>
