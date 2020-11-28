@@ -5,8 +5,7 @@ import FormControl from "@material-ui/core/FormControl";
 import Typography from "@material-ui/core/Typography";
 import useStyles from "../src/styles";
 import { Stepper } from "../src/components/Stepper";
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import Link from "next/link";
+import Footer from "../src/components/Footer";
 
 export default function Index() {
 	const classes = useStyles();
@@ -23,14 +22,7 @@ export default function Index() {
 						</Typography>
 						<Stepper/>
 					</FormControl>
-					<Box className={classes.footer} marginTop={10} width="100%" alignContent="space-between">
-						Made with {<FavoriteBorderIcon/>} by 
-						{
-							<Link href="https://github.com/JonatasT">
-								<a className={classes.link} >JonatasT</a>
-							</Link>
-						}
-					</Box>
+					<Footer/>
 				</Box>
 			</Box>
 		</Grid>
