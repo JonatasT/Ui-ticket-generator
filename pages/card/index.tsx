@@ -4,8 +4,8 @@ import Box from "@material-ui/core/Box";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
 import { DefaultCard } from "../../src/components/Cards/DefaultCard";
+import Footer from "../../src/components/Footer";
 import useStyles from "../../src/styles";
-import { Typography } from "@material-ui/core";
 
 export function Card() {
     const classes = useStyles();
@@ -31,7 +31,7 @@ export function Card() {
                     </a>
                 </Link>
             </Box>
-                                
+                              
             <Box>
                 <motion.div
                 style={{
@@ -51,9 +51,8 @@ export function Card() {
                         }}
                     >
                         <DefaultCard />
+                        <Footer/>
                     </motion.div>
-                
-        
                 </motion.div>
             </Box>
         </Box>
