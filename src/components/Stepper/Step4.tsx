@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Box from "@material-ui/core/Box";
 import { FilePond, registerPlugin } from 'react-filepond';
 import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
@@ -25,17 +26,22 @@ export const Step4 = ({
     props: FileUploaderProps): JSX.Element => {
         
     const [files, setFiles] = useState<File[]>([]);
+    const router = useRouter();
     const classes = useStyles();
    
     const handleInit = () => {
         console.log('FilePond instance has initialised');
     }
 
+    const handleNext = () => {
+        router.push("/card");
+    }
+
     return (
         <Box>
             <Box marginBottom={2}>
                 <PreviousStep action={previousStep}/>
-                <NextStep action={nextStep}/>
+                <NextStep action={handleNext}/>
             </Box>
 
             <StepLabel className={classes.label}>Upload your profile image:</StepLabel>
