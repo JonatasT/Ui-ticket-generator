@@ -1,7 +1,10 @@
+import Box from "@material-ui/core/Box";
 import CustomTextField from "../CustomTextField";
+import { NextStep, PreviousStep } from "../Buttons/NavigationSteps/";
 
 export const Step2 = ({
-    nextStep, 
+    nextStep,
+    previousStep,
     }: any): JSX.Element => {
 
     const handleKeyPress = (e: any) => {
@@ -11,12 +14,20 @@ export const Step2 = ({
     }
     
     return (
-        <CustomTextField
-            name="field2"
-            label="Step2..."
-            nextStep={nextStep}
-            onKeyPress={handleKeyPress}
-        />
+        <Box>
+            <Box marginBottom={2}>
+                <PreviousStep action={previousStep}/>
+                <NextStep action={nextStep}/>
+            </Box>
+
+            <CustomTextField
+                name="field2"
+                label="Step2..."
+                nextStep={nextStep}
+                onKeyPress={handleKeyPress}
+            />
+        </Box>
+        
 
     );
 }
