@@ -4,6 +4,7 @@ import { NextStep, PreviousStep } from "../Buttons/NavigationSteps/";
 
 export const Step1 = ({
     nextStep,
+    previousStep,
   }: any): JSX.Element => {
 
     const handleKeyPress = (e: any) => {
@@ -15,8 +16,8 @@ export const Step1 = ({
     return (
         <Box>
             <Box marginBottom={2}>
-                <PreviousStep/>
-                <NextStep/>
+                <PreviousStep action={previousStep}/>
+                <NextStep action={nextStep}/>
             </Box>
             
             <CustomTextField
