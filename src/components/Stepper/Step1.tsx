@@ -1,5 +1,6 @@
+import Box from "@material-ui/core/Box";
 import CustomTextField from "../CustomTextField";
-import DefaultCard from "../Cards/DefaultCard";
+import { NextStep, PreviousStep } from "../Buttons/NavigationSteps";
 
 export const Step1 = ({
     nextStep,
@@ -12,14 +13,19 @@ export const Step1 = ({
     }
   
     return (
-        <>
+        <Box>
+            <Box marginBottom={4}>
+                <PreviousStep/>
+                <NextStep/>
+            </Box>
+            
             <CustomTextField
                 name="nickname"
                 label="Type your name..."
                 nextStep={nextStep}
                 onKeyPress={handleKeyPress}
             />
-        </>
+        </Box>
     );
   };
   
