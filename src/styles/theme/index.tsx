@@ -10,6 +10,7 @@ const theme = createMuiTheme({
     type: "dark",
     primary: {
       main: colorThemeOne,
+      light: colorThemeTwo,
     },
     secondary: {
       main: "#000",
@@ -62,11 +63,12 @@ const theme = createMuiTheme({
 
     MuiIconButton: {
       root: {
-        border: "2px solid #fff",
+        border: "2px solid transparent",
         padding: "12px 10px",
         "&:hover": {
           borderColor: colorThemeOne+"!important",
         },
+        transition: ".5s",
       },
     },
 
