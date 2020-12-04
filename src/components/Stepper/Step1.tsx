@@ -16,7 +16,6 @@ export const Step1 = ({
     return (
         <Box>
             <Box marginBottom={2}>
-                <PreviousStep action={previousStep}/>
                 <NextStep action={nextStep}/>
             </Box>
             
