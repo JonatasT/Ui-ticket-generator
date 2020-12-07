@@ -25,7 +25,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           ></link>
           <script src="https://assets.pagar.me/checkout/1.1.0/checkout.js"></script>
-          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
