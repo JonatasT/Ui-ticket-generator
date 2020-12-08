@@ -3516,6 +3516,11 @@ line-column@^1.0.2:
     isarray "^1.0.0"
     isobject "^2.0.0"
 
+little-state-machine@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-3.1.3.tgz#2faca935000c0bc21528e829fa729eb9bf38bfbc"
+  integrity sha512-n3NAcFSFJl5eoOzoNxNYE6Xa3Y9/ln9068myXW8H81cClGiD4umQUDpXvjQzCjXZ0iO7IuxFNsjpMVdYTad17w==
+
 loader-runner@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.4.0.tgz#ed47066bfe534d7e84c4c7b9998c2a75607d9357"
