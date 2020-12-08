@@ -4501,6 +4501,11 @@ react-filepond@^7.1.0:
   resolved "https://registry.yarnpkg.com/react-filepond/-/react-filepond-7.1.0.tgz#e3a83321dcfcd9c55f9f7d97ca1042f6d4412e66"
   integrity sha512-hkxhd1PElzbAaPwY0FElQQPdWD1KzIQAYXSkgeE3W2hdFvyXU4hBuBq5/u04emvOJR/RifrdQGXAX1z07DcOvQ==
 
+react-hook-form@^6.12.2:
+  version "6.12.2"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.12.2.tgz#aa67f47da4730a7bce44768583bdf5b749eed521"
+  integrity sha512-O72E2DXyk7djFqyy6eYi5yESGweKe0CNHHPS0Mx4JazpLbE4Ox+66ldZ23f0J5ZN/krEjDWRD+hUfg5Shvfhtw==
+
 react-is@16.13.1, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
