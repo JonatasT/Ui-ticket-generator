@@ -1,6 +1,6 @@
 import Box from "@material-ui/core/Box";
 import CustomTextField from "../CustomTextField";
-import { NextStep, PreviousStep } from "../Buttons/NavigationSteps/";
+import { NextStep } from "../Buttons/NavigationSteps/";
 
 export const Step1 = ({
     nextStep,
@@ -13,6 +13,7 @@ export const Step1 = ({
     }
   
     return (
+
         <Box>
             <Box marginBottom={2}>
                 <NextStep action={nextStep}/>
