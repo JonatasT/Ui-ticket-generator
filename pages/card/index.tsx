@@ -30,8 +30,10 @@ export function Card() {
                         <Image className={classes.logoLandscape} src="/uitgenLandscapeLogoWhite.svg" width="415px" height="32px"/>
                     </a>
                 </Link>
-            </Box>
-                              
+                <Box className={classes.rotate} position="absolute" marginTop="calc(45vh)">
+                    <Footer/>
+                </Box> 
+            </Box>       
             <Box>
                 <motion.div
                 style={{
@@ -51,10 +53,11 @@ export function Card() {
                         }}
                     >
                         <DefaultCard />
-                        <Footer/>
+                        
                     </motion.div>
                 </motion.div>
             </Box>
+    
         </Box>
     );
 }

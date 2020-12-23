@@ -72,7 +72,10 @@ const useStyles = makeStyles((theme: Theme) =>
         color: "#00d4ff",
         transition: ".2s"
       }
-    }
+    },
+    rotate: {
+      transform: "rotate(270deg)",
+    },
   })
 );
 
