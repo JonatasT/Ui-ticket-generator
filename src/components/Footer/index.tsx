@@ -7,7 +7,14 @@ export const Footer = (): JSX.Element => {
     const classes = styles();
     return (
         <Box className={classes.footer} marginTop={10} width="100%" alignContent="space-between">
-            Made with {<FavoriteBorderIcon/>} by 
+            Made with
+            {
+                <Link href="https://nextjs.org/">
+                    <a className={classes.link}>
+                        NextJS 
+                    </a>
+                </Link>
+            } {<FavoriteBorderIcon/>} by 
             {
                 <Link href="https://github.com/JonatasT">
                     <a className={classes.link} >JonatasT</a>

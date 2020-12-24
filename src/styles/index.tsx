@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme: Theme) =>
       textDecoration: "none",
       display: "flex",
       justifyContent: "space-between",
-      width: 200,
+      width: 260,
     },
     link: {
       textDecoration: "none",
