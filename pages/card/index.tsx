@@ -26,9 +26,7 @@ export function Card() {
         <Box>
             <Box>
                 <Link href="/">
-                    <a>
-                        <Image className={classes.logoLandscape} src="/uitgenLandscapeLogoWhite.svg" width="415px" height="32px"/>
-                    </a>
+                    <Image className={classes.logoLandscape} src="/uitgenLandscapeLogoWhite.svg" width={415} height={32}/>
                 </Link>
                 <Box className={classes.rotate} position="absolute" marginTop="45vh" marginLeft={-5}>
                     <Footer/>

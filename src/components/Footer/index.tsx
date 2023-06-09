@@ -9,15 +9,15 @@ export const Footer = (): JSX.Element => {
         <Box className={classes.footer} marginTop={10} width="100%" alignContent="space-between">
             Made with
             {
-                <Link href="https://nextjs.org/">
-                    <a className={classes.link}>
+                <Link href="https://nextjs.org/"
+                    className={classes.link}>
                         NextJS 
-                    </a>
+                    
                 </Link>
             } {<FavoriteBorderIcon/>} by 
             {
-                <Link href="https://github.com/JonatasT">
-                    <a className={classes.link} >JonatasT</a>
+                <Link href="https://github.com/JonatasT"
+                    className={classes.link} >JonatasT
                 </Link>
             }
         </Box>
