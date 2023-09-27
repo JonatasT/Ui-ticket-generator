@@ -11,7 +11,7 @@ export default function Index() {
 	const classes = useStyles();
 
 	return (
-		<Grid container direction="column" justify="center" alignItems="center">
+		<Grid container direction="column" justifyContent="center" alignItems="center">
 			 <Box marginTop={15} className={classes.box}>
 				<Box className={classes.innerBox}>
 					<FormControl>
